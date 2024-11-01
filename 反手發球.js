@@ -31,7 +31,7 @@ function uploadVideo() {
     loadingText.style.display = 'block';
     resultContainer.style.display = 'none';
 
-    fetch('https://098e-2001-b400-e2a6-b298-dca8-f638-2c44-43bc.ngrok-free.app/upload', {
+    fetch('http://18.181.47.113:8080/ai-badminton-coach/upload', {
         method: 'POST',
         body: formData
     })
@@ -69,4 +69,8 @@ function resetFileSelection() {
     commentCell.textContent = '';
 
     fileUploadLabel.classList.remove('has-video');
+}
+
+function goBack() {
+    window.location.href = 'https://previewer.adalo.com/9f754723-deab-48b2-837c-9cc329f37f6b?_gl=1%2A118jkwu%2A_gcl_au%2AOTU4ODkyOTMzLjE3MjkxNjUzMTY.%2A_ga%2ANTk3NzEyMDEwLjE3MjkxNjUzMjI.%2A_ga_SWT45DV35L%2AMTczMDM2ODE3NC4xOS4xLjE3MzAzNzA0ODQuNTcuMC4w&target=8jrctxujt9yzd6jssiowqg9b5&params=%7B%7D';
 }
