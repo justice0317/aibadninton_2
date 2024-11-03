@@ -31,7 +31,7 @@ function uploadVideo() {
     loadingText.style.display = 'block';
     resultContainer.style.display = 'none';
 
-    fetch('https://013b-163-14-37-178.ngrok-free.app/upload', {
+    fetch('https://23e7-163-14-37-178.ngrok-free.app/upload', {
         method: 'POST',
         body: formData
     })
