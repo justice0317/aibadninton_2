@@ -81,7 +81,7 @@ function uploadVideo() {
     formData.append('video', videoFile);
 
     // 使用 Fetch API 將影片上傳到 Flask API
-    fetch('https://1d2b-2001-b400-e78c-5f54-5415-5fa2-37af-90b1.ngrok-free.app/upload', {
+    fetch('https://b593-163-14-37-74.ngrok-free.app/upload', {
         method: 'POST',
         body: formData
     })
